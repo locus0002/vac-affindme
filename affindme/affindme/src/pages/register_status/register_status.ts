@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ActionSheetController, Platform } from 'ionic-angular';
+import { AffinmapPage } from '../affinmap/affinmap';
 
 /*
   Generated class for the register_status page.
@@ -96,4 +97,7 @@ export class RegisterStatusPage {
       currentActionSheet.present();
     }
 
+    saveContinue() {
+      this.navCtrl.setRoot(AffinmapPage);
+    }
 }

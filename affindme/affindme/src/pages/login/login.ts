@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { RegisterDataPage } from '../register_data/register_data';
+import { AffinmapPage } from '../affinmap/affinmap';
 
 /*
   Generated class for the login page.
@@ -25,7 +26,7 @@ export class LoginPage {
     }
 
     logIn() {
-      console.log('ionViewDidLoad loginPage');
+      this.navCtrl.setRoot(AffinmapPage);
     }
 
     getFbAccount() {
