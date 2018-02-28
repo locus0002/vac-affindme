@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ActionSheetController, Platform } from 'ionic-angular';
-import { AffinmapPage } from '../affinmap/affinmap';
+import { Tabs } from '../tabs/tabs';
 
 /*
   Generated class for the register_status page.
@@ -48,7 +48,7 @@ export class RegisterStatusPage {
               icon: !this.platform.is('ios') ? 'alert' : null,
               handler: () => {
                 this.urlCurrentImage = 'assets/image/trafficlightComplicated.jpg';
-                this.txtStatus = 'Taken';
+                this.txtStatus = 'Complicated';
               }
             },
             {
@@ -56,7 +56,7 @@ export class RegisterStatusPage {
               icon: !this.platform.is('ios') ? 'bonfire' : null,
               handler: () => {
                 this.urlCurrentImage = 'assets/image/trafficlightAvailable.jpg';
-                this.txtStatus = 'Taken';
+                this.txtStatus = 'Available';
               }
             }
           ]
@@ -98,6 +98,6 @@ export class RegisterStatusPage {
     }
 
     saveContinue() {
-      this.navCtrl.setRoot(AffinmapPage);
+      this.navCtrl.setRoot(Tabs);
     }
 }

@@ -25,18 +25,19 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
-  <ion-fab right bottom>
-    <button ion-fab (click)="createNewState()" color="secondary" >
-      <ion-icon name="add"></ion-icon>
-    </button>
-  </ion-fab>
+  <div id="goomap" ></div>
 
-  <ion-fab left bottom>
-    <button ion-fab (click)="createNewEvent()" color="secondary">
-      <ion-icon name="megaphone"></ion-icon>
-    </button>
-  </ion-fab>
+  <!--<ion-fab left bottom>
+
+    <button ion-fab color="secondary"><ion-icon name="add"></ion-icon></button>
+
+    <ion-fab-list side="top">
+      <button ion-fab (click)="createNewEvent()" ><ion-icon name="people" ></ion-icon></button>
+      <button ion-fab (click)="createNewState()"  ><ion-icon name="megaphone"></ion-icon></button>
+    </ion-fab-list>
+
+  </ion-fab>-->
 
 </ion-content>

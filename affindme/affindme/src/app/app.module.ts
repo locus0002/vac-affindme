@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { Geolocation } from 'ionic-native';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
@@ -9,6 +10,7 @@ import { RegisterStatusPage } from '../pages/register_status/register_status';
 import { AffinmapPage } from '../pages/affinmap/affinmap';
 import { StateModal } from '../pages/state/state';
 import { EventModal } from '../pages/event/event';
+import { Tabs } from '../pages/tabs/tabs';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { EventModal } from '../pages/event/event';
     RegisterStatusPage,
     AffinmapPage,
     EventModal,
-    StateModal
+    StateModal,
+    Tabs
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -35,8 +38,13 @@ import { EventModal } from '../pages/event/event';
     RegisterStatusPage,
     AffinmapPage,
     EventModal,
-    StateModal
+    StateModal,
+    Tabs
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    {
+      provide: ErrorHandler, useClass: IonicErrorHandler
+    },
+    Geolocation]
 })
 export class AppModule {}

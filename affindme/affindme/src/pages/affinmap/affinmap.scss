@@ -1,3 +1,10 @@
-page-affinmap {
+ion-app._gmaps_cdv_ .nav-decor {
+  background-color: transparent !important;
+}
 
+page-affinmap {
+  #goomap {
+    height: 100%;
+    width: 100%;
+  }
 }
