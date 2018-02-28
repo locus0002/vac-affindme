@@ -1,0 +1,59 @@
+<!--
+  Generated template for the NewPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary" >
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-card-content>
+
+      <ion-card-title>
+        <div text-center><strong>Contact</strong></div>
+      </ion-card-title>
+
+      <ion-list>
+        <ion-item>
+          <ion-icon name="phone-portrait" item-left></ion-icon>
+          <ion-input type="text" placeholder="Phone"></ion-input>
+          <button ion-button outline item-right clear color="primary" icon-left (click)="sendCode()">
+            <ion-icon name="send"></ion-icon>
+          </button>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="key" item-left></ion-icon>
+          <ion-input type="number" placeholder="Code" readonly="true"></ion-input>
+          <ion-spinner outline item-right name="bubbles"></ion-spinner>
+        </ion-item>
+        
+        <ion-item>
+          <ion-toggle checked="false"></ion-toggle>
+          <ion-label>
+            Import Contacts
+          </ion-label>
+          <ion-icon name="contact" item-left></ion-icon>
+        </ion-item>
+        
+      </ion-list>
+    </ion-card-content>
+
+    <div text-center>
+      <button class="button-card" ion-button color="primary" block icon-right (click)="saveContinue()">
+        Continue
+        <ion-icon name="arrow-dropright-circle"></ion-icon>
+      </button>
+    </div>
+    
+  </ion-card>
+</ion-content>
