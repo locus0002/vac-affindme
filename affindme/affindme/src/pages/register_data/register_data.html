@@ -16,8 +16,14 @@
 <ion-content padding>
   <ion-card>
     <br />
-    <div text-center>
-      <img class="profile_img" src="assets/image/profile.jpg" />
+
+    <div text-center class="border_div">
+
+      <button class="button_img" ion-fab mini color="primary" (click)="chooseOption()">
+        <ion-icon name="camera"></ion-icon>
+      </button>
+        
+      <img class="profile_img" [src]="currentImageURL" (click)="viewCurrentImage()" />
     </div>
 
     <ion-card-content>

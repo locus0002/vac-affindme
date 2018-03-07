@@ -11,6 +11,8 @@ import { AffinmapPage } from '../pages/affinmap/affinmap';
 import { StateModal } from '../pages/state/state';
 import { EventModal } from '../pages/event/event';
 import { Tabs } from '../pages/tabs/tabs';
+import { ImageGalleryModal } from '../pages/images_gallery/images_gallery';
+import { CameraPreviewPage } from '../pages/camera_preview/camera_preview';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { Tabs } from '../pages/tabs/tabs';
     AffinmapPage,
     EventModal,
     StateModal,
-    Tabs
+    Tabs,
+    ImageGalleryModal,
+    CameraPreviewPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -39,7 +43,9 @@ import { Tabs } from '../pages/tabs/tabs';
     AffinmapPage,
     EventModal,
     StateModal,
-    Tabs
+    Tabs,
+    ImageGalleryModal,
+    CameraPreviewPage
   ],
   providers: [
     {
